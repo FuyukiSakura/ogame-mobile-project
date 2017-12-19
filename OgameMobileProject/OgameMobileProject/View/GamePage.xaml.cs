@@ -38,5 +38,14 @@ namespace OgameMobileProject.View
                 "document.getElementById('loginSubmit').click();");
             }
         }
+
+        /// <summary>
+        /// Get the WebView object for control
+        /// </summary>
+        /// <returns></returns>
+        public WebView GetBrowser()
+        {
+            return MainBrowser;
+        }
 	}
 }

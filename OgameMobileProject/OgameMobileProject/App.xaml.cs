@@ -12,8 +12,7 @@ namespace OgameMobileProject
 		public App ()
 		{
 			InitializeComponent();
-
-			MainPage = new OgameMobileProject.MainPage();
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

@@ -18,5 +18,15 @@ namespace OgameMobileProject.View
 			InitializeComponent ();
             Controller = controller;
 		}
-	}
+
+        /// <summary>
+        /// Open the game browser for navigating with alarm on
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public async void OpenBrowser_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(Controller);
+        }
+    }
 }

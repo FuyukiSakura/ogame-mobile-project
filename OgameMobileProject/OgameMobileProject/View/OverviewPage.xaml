@@ -5,6 +5,7 @@
              Title="Overview">
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Open Browser" Clicked="OpenBrowser_Clicked" />
             <Label Text="Your fleets" />
             <ListView x:Name="FleetList">
                 

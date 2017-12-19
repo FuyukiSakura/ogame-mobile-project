@@ -12,7 +12,10 @@ namespace OgameMobileProject
 		public App ()
 		{
 			InitializeComponent();
-			MainPage = new NavigationPage(new MainPage());
+			MainPage = new NavigationPage(new MainPage())
+            {
+                Title = "Ogame VEGA"
+            };
 		}
 
 		protected override void OnStart ()

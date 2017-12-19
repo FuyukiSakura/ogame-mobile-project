@@ -11,7 +11,6 @@ namespace OgameMobileProject
 {
 	public partial class MainPage : ContentPage
 	{
-        public GamePage Current { get; set; }
 		public MainPage()
 		{
 			InitializeComponent();
@@ -25,8 +24,8 @@ namespace OgameMobileProject
                 Password = PasswordEntry.Text
             };
 
-            Current = new GamePage(account);
-            await Navigation.PushAsync(Current);
+            var main = new OverviewPage(new GamePage(account));
+            await Navigation.PushAsync(main);
         }
     }
 }

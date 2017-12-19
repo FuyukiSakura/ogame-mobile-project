@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:OgameMobileProject"
              x:Class="OgameMobileProject.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Server" />
+        <Entry Text="VEGA" IsEnabled="False" />
+        <Label Text="Username (email)" />
+        <Entry x:Name="UsernameEntry" Placeholder="Commodore Cetus" />
+        <Label Text="Password" />
+        <Entry x:Name="PasswordEntry" IsPassword="True" />
+        <Button Text="Login" Clicked="LoginButton_Clicked" />
+    </StackLayout>
 </ContentPage>
